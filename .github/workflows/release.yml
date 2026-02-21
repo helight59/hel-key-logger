@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
+      - name: Install PyInstaller
         shell: pwsh
         run: |
           python -m pip install --upgrade pip
@@ -32,13 +32,15 @@ jobs:
         run: |
           python -m PyInstaller --noconfirm --clean --onefile --windowed --name "Hel Key Logger" --icon "assets\app.ico" --add-data "i18n;i18n" --add-data "assets;assets" main.py
 
-      - name: Upload artifact (for workflow)
-        uses: actions/upload-artifact@v4
-        with:
-          name: Hel-Key-Logger-windows
-          path: dist/Hel Key Logger.exe
+      - name: Verify output
+        shell: pwsh
+        run: |
+          if (!(Test-Path "dist\Hel Key Logger.exe")) { throw "EXE not found: dist\Hel Key Logger.exe" }
+          Get-Item "dist\Hel Key Logger.exe" | Format-List Name,Length,FullName
 
       - name: Attach EXE to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/Hel Key Logger.exe
+          files: |
+            dist/Hel Key Logger.exe
+          fail_on_unmatched_files: true
