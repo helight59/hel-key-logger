@@ -37,6 +37,11 @@ This tool does **not** record passwords, screen contents, or network traffic. It
 
 ## [Latest release](https://github.com/helight59/hel-key-logger/releases)
 
+## Screenshots
+
+<img src="docs/hel-key-logger-screen.png" alt="Описание" width="520">
+
+---
 
 ## Run (from source)
 
