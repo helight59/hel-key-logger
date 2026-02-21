@@ -35,6 +35,9 @@ This tool does **not** record passwords, screen contents, or network traffic. It
 
 ---
 
+## [Latest release](https://github.com/helight59/hel-key-logger/releases)
+
+
 ## Run (from source)
 
 ### 1) Install Python
