@@ -1,0 +1,70 @@
+{
+  "app_title": "Hel Key Logger",
+  "intro_1": "Listening to Raw Input…",
+  "intro_2": "If a key never reaches Windows, it won't appear here.",
+  "registered": "Registered Raw Input devices",
+  "register_failed": "RegisterRawInputDevices failed",
+  "getraw_failed": "GetRawInputData failed",
+
+  "keyboard": "Keyboard event",
+  "hid": "HID event",
+  "other": "Other input event",
+
+  "device": "Device",
+  "unknown_device": "Unknown device",
+  "unknown_device_note": "Windows did not provide a device handle (hDevice=0) or the device could not be resolved at the moment. This can happen with some HID/Bluetooth devices.",
+
+  "transport_bt": "Bluetooth",
+  "transport_bt_gatt": "Bluetooth (GATT)",
+  "transport_usb_or_dongle": "USB / 2.4 dongle",
+  "transport_unknown": "Unknown transport",
+
+  "vkey": "VKey",
+  "makecode": "ScanCode",
+  "flags": "Flags",
+  "msg": "Message",
+
+  "desc": "Description",
+  "key_name": "Key",
+  "msg_unknown": "Unknown key message",
+  "flags_none": "None",
+
+  "msg_keydown": "Key press",
+  "msg_keyup": "Key release",
+  "msg_syskeydown": "System key press (Alt / system)",
+  "msg_syskeyup": "System key release (Alt / system)",
+
+  "flag_break": "Break (release)",
+  "flag_e0": "Extended (E0)",
+  "flag_e1": "Extended (E1)",
+
+  "sizehid": "ReportSize",
+  "count": "Reports",
+  "bytes": "Bytes",
+  "data_sample": "Data sample",
+
+  "device_name": "Name",
+  "device_handle": "Handle",
+  "device_transport": "Transport",
+  "device_vid": "Vendor ID",
+  "device_pid": "Product ID",
+  "device_mi": "Interface",
+  "device_guid": "GUID",
+  "device_path": "Path",
+
+  "tt_vendor_id": "Vendor ID (VID) identifies the manufacturer of the device.",
+  "tt_product_id": "Product ID (PID) identifies the device model within the vendor.",
+  "tt_interface": "Interface (MI_XX) is the function/interface number for composite devices.",
+  "tt_guid": "GUID identifies the device interface class used by Windows to route this kind of input.",
+  "tt_path": "Raw device path provided by Windows Raw Input. Useful for diagnostics and matching devices.",
+  "tt_handle": "Raw Input device handle. Sometimes Windows sends 0 (unknown).",
+  "tt_transport": "Transport is inferred from the device path (USB / dongle / Bluetooth).",
+
+  "tt_vkey": "Virtual-Key code: logical key identifier used by Windows (VK_*).",
+  "tt_scancode": "Scan code: physical key identifier (hardware-level).",
+  "tt_flags": "Flags: extended keys (E0/E1) and break (release) indicator for scan codes.",
+  "tt_msg": "Windows message type: key press/release (and system key variants).",
+
+  "hid_device": "HID Device",
+  "hid_device_vidpid": "HID Device ({vid}:{pid})"
+}
