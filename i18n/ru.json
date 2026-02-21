@@ -1,0 +1,70 @@
+{
+  "app_title": "Hel Key Logger",
+  "intro_1": "Слушаю Raw Input…",
+  "intro_2": "Если кнопка не доходит до Windows, здесь ничего не появится.",
+  "registered": "Зарегистрированы Raw Input устройства",
+  "register_failed": "Ошибка RegisterRawInputDevices",
+  "getraw_failed": "Ошибка GetRawInputData",
+
+  "keyboard": "Событие клавиатуры",
+  "hid": "Событие HID",
+  "other": "Другое событие ввода",
+
+  "device": "Устройство",
+  "unknown_device": "Неизвестное устройство",
+  "unknown_device_note": "Windows не передала handle устройства (hDevice=0) или устройство не удалось определить в момент события. Так бывает у некоторых HID/Bluetooth устройств.",
+
+  "transport_bt": "Bluetooth",
+  "transport_bt_gatt": "Bluetooth (GATT)",
+  "transport_usb_or_dongle": "USB / 2.4 донгл",
+  "transport_unknown": "Неизвестный канал",
+
+  "vkey": "VKey",
+  "makecode": "Скан-код",
+  "flags": "Флаги",
+  "msg": "Сообщение",
+
+  "desc": "Описание",
+  "key_name": "Клавиша",
+  "msg_unknown": "Неизвестный тип сообщения клавиши",
+  "flags_none": "Нет",
+
+  "msg_keydown": "Нажатие",
+  "msg_keyup": "Отпускание",
+  "msg_syskeydown": "Нажатие системной клавиши (Alt / системное)",
+  "msg_syskeyup": "Отпускание системной клавиши (Alt / системное)",
+
+  "flag_break": "Break (отпускание)",
+  "flag_e0": "Расширенная (E0)",
+  "flag_e1": "Расширенная (E1)",
+
+  "sizehid": "Размер отчёта",
+  "count": "Отчётов",
+  "bytes": "Байт",
+  "data_sample": "Пример данных",
+
+  "device_name": "Имя",
+  "device_handle": "Handle",
+  "device_transport": "Канал",
+  "device_vid": "Vendor ID",
+  "device_pid": "Product ID",
+  "device_mi": "Интерфейс",
+  "device_guid": "GUID",
+  "device_path": "Path",
+
+  "tt_vendor_id": "Vendor ID (VID) — идентификатор производителя устройства.",
+  "tt_product_id": "Product ID (PID) — идентификатор модели устройства у производителя.",
+  "tt_interface": "Интерфейс (MI_XX) — номер интерфейса у составных (composite) устройств.",
+  "tt_guid": "GUID — идентификатор класса интерфейса устройства, по которому Windows маршрутизирует ввод.",
+  "tt_path": "Raw device path из Windows Raw Input. Полезно для диагностики и сопоставления устройства.",
+  "tt_handle": "Handle устройства в Raw Input. Иногда Windows присылает 0 (неизвестно).",
+  "tt_transport": "Канал определяется эвристически по строке пути (USB/донгл/Bluetooth).",
+
+  "tt_vkey": "VKey — виртуальный код клавиши (логический идентификатор VK_* в Windows).",
+  "tt_scancode": "Скан-код — физическая клавиша на уровне железа.",
+  "tt_flags": "Флаги: расширенные клавиши (E0/E1) и признак отпускания (break).",
+  "tt_msg": "Тип Windows-сообщения: нажатие/отпускание (и системные варианты).",
+
+  "hid_device": "HID-устройство",
+  "hid_device_vidpid": "HID-устройство ({vid}:{pid})"
+}
